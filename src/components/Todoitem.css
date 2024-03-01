@@ -1,0 +1,52 @@
+.row-todo{
+  margin: 8px 2px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media(width<=768px){
+  .row-todo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+  }
+  .taskinput  .dateinput{
+    width: 80%;
+  }
+
+}
+.btn-todo{
+  width: auto;
+  height: 38px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  float: right;
+  display: inline;
+}
+.btn-todo:hover{
+  box-shadow: 0 0 5px 1px rgb(255, 251, 1);
+  opacity: 0.8;
+}
+.Add{
+  background-color: rgb(41, 117, 41);
+  border: 1px solid rgb(41, 117, 41);
+}
+.Delete{
+  border: 1px solid #DC3545;
+  background-color: #DC3545;
+}
+.task{
+  padding-left: 10px;
+}
+.Date{
+  padding-left: 20px;
+}
